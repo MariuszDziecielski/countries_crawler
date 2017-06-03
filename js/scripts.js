@@ -15,8 +15,17 @@ $(function () {
         });
     }
     function showCountriesList(resp) {
+        var result = '';
         countriesList.empty();
         resp.forEach(function (item) {
+            result += '\
+                <li> \
+                     <div> \
+                          <span>Capital: </span>' + item.capital + '\
+                      </div> \
+                </li> \
+            ';
+            
             $('<li class="name">').html('<h3>' + item.name + '</h3>').appendTo(countriesList).fadeIn('slow');
             $('<li class="info">').text('Background Information:').appendTo(countriesList).fadeIn('slow');
             $('<li>').html('<span>Capital: </span>' + item.capital).appendTo(countriesList).fadeIn('slow');
@@ -31,5 +40,7 @@ $(function () {
             $('<li>').html('<span>Language: </span>' + item.languages[0]).appendTo(countriesList).fadeIn('slow');
             $('<li>').html('<span>Alpha 3 Code: </span>' + item.alpha3Code).appendTo(countriesList).fadeIn('slow');
         });
+        
+        result.appendTo(countriesList).fadeIn('slow');
     }
 });
