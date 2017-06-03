@@ -1,14 +1,14 @@
 {
-  "name": "kodilla-task_12.6",
+  "name": "countries_crawler",
   "version": "1.0.0",
-  "description": "Task 12.6",
+  "description": "Countries crawler",
   "main": "js/scripts.js",
   "scripts": {
     "test": "test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MariuszDziecielski/task_12.6.git"
+    "url": "https://github.com/MariuszDziecielski/countries_crawler.git"
   },
   "keywords": [
     "grunt"
@@ -16,9 +16,9 @@
   "author": "Mariusz Dziecielski",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/MariuszDziecielski/task_12.6/issues"
+    "url": "https://github.com/MariuszDziecielski/countries_crawler/issues"
   },
-  "homepage": "https://github.com/MariuszDziecielski/task_12.6#readme",
+  "homepage": "https://github.com/MariuszDziecielski/countries_crawler#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-browser-sync": "^2.2.0",
