@@ -1,30 +1,30 @@
 {
-  "name": "countries_crawler",
-  "version": "1.0.0",
-  "description": "Countries crawler",
-  "main": "js/scripts.js",
-  "scripts": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/MariuszDziecielski/countries_crawler.git"
-  },
-  "keywords": [
-    "grunt"
-  ],
-  "author": "Mariusz Dziecielski",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MariuszDziecielski/countries_crawler/issues"
-  },
-  "homepage": "https://github.com/MariuszDziecielski/countries_crawler#readme",
-  "devDependencies": {
-    "grunt": "^1.0.1",
-    "grunt-browser-sync": "^2.2.0",
-    "grunt-contrib-imagemin": "^1.0.1",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-sass": "^2.0.0"
-  }
+    "name": "countries_crawler",
+    "version": "1.0.0",
+    "description": "Countries crawler",
+    "main": "js/scripts.js",
+    "scripts": {
+        "test": "test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/MariuszDziecielski/countries_crawler.git"
+    },
+    "keywords": [
+        "grunt"
+    ],
+    "author": "Mariusz Dziecielski",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/MariuszDziecielski/countries_crawler/issues"
+    },
+    "homepage": "https://github.com/MariuszDziecielski/countries_crawler#readme",
+    "devDependencies": {
+        "grunt": "^1.0.1",
+        "grunt-browser-sync": "^2.2.0",
+        "grunt-contrib-imagemin": "^1.0.1",
+        "grunt-contrib-jshint": "^1.1.0",
+        "grunt-contrib-watch": "^1.0.0",
+        "grunt-sass": "^2.0.0"
+    }
 }
