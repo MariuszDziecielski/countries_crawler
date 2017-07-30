@@ -13,7 +13,11 @@ module.exports = function (grunt) {
             }
         },
         jshint: {
-            all: ['js/*.js']
+            all: ['js/*.js'],
+            options: {
+                'esversion': 6,
+                '-W043': true
+            }
         },
         watch: {
             sass: {

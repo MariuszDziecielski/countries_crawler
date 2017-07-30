@@ -1,15 +1,14 @@
-/* jshint -W043 */
 $(function () {
-    var url = "https://restcountries.eu/rest/v1/name/",
+    const url = "https://restcountries.eu/rest/v1/name/",
         $countriesList = $("#countries"),
         $inputElement = $("#country-name");
     $("#search").click(searchCountries);
     $inputElement.focus(function () {
-        $inputElement.val("");
+        $inputElement.val('');
     });
     function searchCountries() {
-        var countryName = $inputElement.val();
-        if (!countryName.length) countryName = "Poland";
+        let countryName = $inputElement.val();
+        if (!countryName.length) countryName = 'Poland';
         $.ajax({
             url: url + countryName,
             method: "GET",
@@ -17,50 +16,50 @@ $(function () {
         });
     }
     function showCountriesList(resp) {
-        var searchResult = "";
+        let searchResult = "";
         $countriesList.empty();
         resp.forEach(function (item) {
-            searchResult += "\
-                <li class='name'> \
-                    <h3>" + item.name + "</h3>" + "\
+            searchResult += '\
+                <li class="name"> \
+                    <h3>' + item.name + '</h3> \
                 </li> \
-                <li class='info'> \
+                <li class="info"> \
                     Background Information: \
                 </li> \
                 <li> \
-                    <span>Capital: </span>" + item.capital + "\
+                    <span>Capital: </span>' + item.capital + '\
                 </li> \
                 <li> \
-                    <span>Land area: </span>" + item.area + "\
+                    <span>Land area: </span>' + item.area + '\
                 </li> \
                 <li> \
-                    <span>Population: </span>" + item.population + "\
+                    <span>Population: </span>' + item.population + '\
                 </li> \
                 <li> \
-                    <span>Native Name: </span>" + item.nativeName + "\
+                    <span>Native Name: </span>' + item.nativeName + '\
                 </li> \
                 <li> \
-                    <span>Region: </span>" + item.region + "\
+                    <span>Region: </span>' + item.region + '\
                 </li> \
                 <li> \
-                    <span>Subregion: </span>" + item.subregion + "\
+                    <span>Subregion: </span>' + item.subregion + '\
                 </li> \
                 <li> \
-                    <span>Top Level Domain: </span>" + item.topLevelDomain[0] + "\
+                    <span>Top Level Domain: </span>' + item.topLevelDomain[0] + '\
                 </li> \
                 <li> \
-                    <span>Calling Code: </span>" + item.callingCodes[0] + "\
+                    <span>Calling Code: </span>' + item.callingCodes[0] + '\
                 </li> \
                 <li> \
-                    <span>Currency: </span>" + item.currencies[0] + "\
+                    <span>Currency: </span>' + item.currencies[0] + '\
                 </li> \
                 <li> \
-                    <span>Language: </span>" + item.languages[0] + "\
+                    <span>Language: </span>' + item.languages[0] + '\
                 </li> \
                 <li> \
-                    <span>Alpha 3 Code: </span>" + item.alpha3Code + "\
+                    <span>Alpha 3 Code: </span>' + item.alpha3Code + '\
                 </li> \
-            ";
+            ';
         });
         $(searchResult).appendTo($countriesList).fadeIn("slow");
     }
