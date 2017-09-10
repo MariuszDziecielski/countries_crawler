@@ -2,7 +2,7 @@
   "name": "countries_crawler",
   "version": "1.0.0",
   "description": "Countries crawler",
-  "main": "js/scripts.js",
+  "main": "js/CountriesCrawler.js",
   "scripts": {
     "test": "test"
   },
