@@ -13,143 +13,138 @@ body
     background-color: $whiteColor
 *
     box-sizing: border-box
-.container
-    max-width: 1200px
-    margin: 0 auto
 img
     max-width: 100%
     height: auto
-.countries
-    .container
-        padding: 35px 0 10px
-        img
-            &:nth-of-type(1)
-                width: 10vw
-            &:nth-of-type(2)
-                width: 100%
-        h1
-            margin: 50px 0
-            font-size: 33px
-            color: $blackColor
-        .countries_container
-            background: $whiteColor
-            width: 100%
-            min-height: 100px
-            margin: 70px auto 0
-            padding: 30px 30px
-            img
-                margin-bottom: 20px
-            h2
-                padding: 30px
-            button
-                font: 700 18px $primFont
-                outline: none
-                border-radius: 12px
-                cursor: pointer
-                padding: 9px 14px
-                margin: 15px 10px 15px 5px
-                +colors()
-                &:hover
-                    +colors($greyColor)
-            input
-                background-color: $lightGreyColor
-                margin: 13px 0 5px
-                font: 700 15px $primFont
-                width: 105px
-                border: 1px solid #b3b3b3
-                border-radius: 7px
-                padding: 10px 10px 10px 9px
-            ul
-                background-color: $lightGreyColor
-                margin: 0
-                padding: 0 0 20px
-                li
-                    display: none
-                    font-size: 16px
-                    list-style-type: none
-                    padding: 30px
-                    font-weight: 700
-                    span
-                        background-color: $greyColor
-                        padding: 10px 10px 10px 20px
-                        font-weight: 700
-                        margin-right: 20px
-                    h3
-                        font-size: 1.3em
-                        margin: 0
-                    &:hover
-                        background-color: $greyColor
-                    &.default
-                        display: block
-                    &.name
-                        margin: 45px 0 0
-                        background-color: $greyColor
-                    &.info
-                        background-color: $whiteColor
-                        font-size: 17px
-                        border-left: 3px solid $lightGreyColor
-                        border-right: 3px solid $lightGreyColor
+.countries,
 footer
-    .container
-        padding: 20px 0 25px
-        font: normal 15px/17px $primFont
-        color: $blackColor
-        img
+    max-width: 1200px
+    margin: 0 auto
+.countries
+    padding: 35px 0 10px
+    img
+        &:nth-of-type(1)
             width: 10vw
-            margin-bottom: 30px
-        .copyright
-            height: 30px
+        &:nth-of-type(2)
+            width: 100%
+    h1
+        margin: 50px 0
+        font-size: 33px
+        color: $blackColor
+    .countries_container
+        background: $whiteColor
+        width: 100%
+        min-height: 100px
+        margin: 70px auto 0
+        padding: 30px 30px
+        img
+            margin-bottom: 20px
+        h2
+            padding: 30px
+        button
+            font: 700 18px $primFont
+            outline: none
+            border-radius: 12px
+            cursor: pointer
+            padding: 9px 14px
+            margin: 15px 10px 15px 5px
+            +colors()
+            &:hover
+                +colors($greyColor)
+        input
+            background-color: $lightGreyColor
+            margin: 13px 0 5px
+            font: 700 15px $primFont
+            width: 105px
+            border: 1px solid #b3b3b3
+            border-radius: 7px
+            padding: 10px 10px 10px 9px
+        ul
+            background-color: $lightGreyColor
+            margin: 0
+            padding: 0 0 20px
+            li
+                display: none
+                font-size: 16px
+                list-style-type: none
+                padding: 30px
+                font-weight: 700
+                span
+                    background-color: $greyColor
+                    padding: 10px 10px 10px 20px
+                    font-weight: 700
+                    margin-right: 20px
+                h3
+                    font-size: 1.3em
+                    margin: 0
+                &:hover
+                    background-color: $greyColor
+                &.default
+                    display: block
+                &.name
+                    margin: 45px 0 0
+                    background-color: $greyColor
+                &.info
+                    background-color: $whiteColor
+                    font-size: 17px
+                    border-left: 3px solid $lightGreyColor
+                    border-right: 3px solid $lightGreyColor
+footer
+    padding: 20px 0 25px
+    font: normal 15px/17px $primFont
+    color: $blackColor
+    img
+        width: 10vw
+        margin-bottom: 30px
+    .copyright
+        height: 30px
 /* Media queries */
 /* For computers: */
 @media (max-width: 992px)
-    .container
+    .countries,
+    footer
         width: 100%
         padding-bottom: 2vh
     .countries
-        .container
-            img
-                &:nth-of-type(1)
-                    width: 12vw
-            h1
-                font-size: 27px
-            .countries_container
-                margin-top: 3vw
-    footer
-        .container
-            img
+        img
+            &:nth-of-type(1)
                 width: 12vw
+        h1
+            font-size: 27px
+        .countries_container
+            margin-top: 3vw
+    footer
+        img
+            width: 12vw
 /* For tablets: */
 @media (max-width: 768px)
     .countries
-        .container
-            h1
-                font-size: 24px
+        h1
+            font-size: 24px
 /* For smart phones: */
 @media (max-width: 480px)
     .countries
-        .container
-            img
-                &:nth-of-type(1)
-                    width: 15vw
-                &:nth-of-type(2)
-                    width: 90%
-            h1
-                font-size: 18px
-            .countries_container
-                padding: 15px 15px
-                h2
-                    font-size: 15px
-                button
-                    font-size: 15px
-                ul
-                    li
-                        font-size: 12px
-                        padding: 30px 0px
-                        h3
-                            font-size: 1.1em
-                        &.info
-                            font-size: 15px
+        img
+            &:nth-of-type(1)
+                width: 15vw
+            &:nth-of-type(2)
+                width: 90%
+        h1
+            font-size: 18px
+        .countries_container
+            padding: 15px 15px
+            h2
+                font-size: 15px
+            button
+                font-size: 15px
+            ul
+                li
+                    font-size: 12px
+                    padding: 30px 0px
+                    h3
+                        font-size: 1.1em
+                    &.info
+                        font-size: 15px
     footer
-        .container
-            font-size: 12px
-            padding-bottom: 35px
+        font-size: 12px
+        padding-bottom: 35px
