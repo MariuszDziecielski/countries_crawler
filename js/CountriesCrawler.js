@@ -20,7 +20,7 @@ class CountriesCrawler {
     showCountriesList(resp) {
         let searchResult = "";
         countriesCrawler.$countriesList.empty();
-        resp.forEach(function (item) {
+        resp.forEach(item => {
             searchResult += `\
                 <li class="name">\
                     <h3>${item.name}</h3>\
