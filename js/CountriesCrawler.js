@@ -1,14 +1,14 @@
-function CountriesCrawler(url, element) {
-    this.url = url;
-    this.$countriesList = element;
-    this.$inputElement = $("#country-name");
-    this.$inputElement.focus(() => {
-        this.$inputElement.val('');
-    });
-    $("#search").click(this.searchCountries);
-}
-CountriesCrawler.prototype = {
-    searchCountries: function () {
+class CountriesCrawler {
+    constructor(url, element) {
+        this.url = url;
+        this.$countriesList = element;
+        this.$inputElement = $("#country-name");
+        this.$inputElement.focus(() => {
+            this.$inputElement.val('');
+        });
+        $("#search").click(this.searchCountries);
+    }
+    searchCountries() {
         let countryName = countriesCrawler.$inputElement.val();
         if (!countryName.length) countryName = 'Poland';
         $.ajax({
@@ -16,8 +16,8 @@ CountriesCrawler.prototype = {
             method: "GET",
             success: countriesCrawler.showCountriesList
         });
-    },
-    showCountriesList: function (resp) {
+    }
+    showCountriesList(resp) {
         let searchResult = "";
         countriesCrawler.$countriesList.empty();
         resp.forEach(function (item) {
@@ -65,5 +65,5 @@ CountriesCrawler.prototype = {
         });
         $(searchResult).appendTo(countriesCrawler.$countriesList).fadeIn("slow");
     }
-};
+}
 const countriesCrawler = new CountriesCrawler("https://restcountries.eu/rest/v1/name/", $("#countries"));
