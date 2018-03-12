@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro:400,400i,700,700i&subset=latin-ext");
+body {
+  font: normal 13px "Anonymous Pro", monospace;
+  text-align: center;
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.countries,
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.countries {
+  padding: 35px 0 10px;
+}
+
+.countries img:nth-of-type(1) {
+  width: 10vw;
+}
+
+.countries img:nth-of-type(2) {
+  width: 100%;
+}
+
+.countries h1 {
+  margin: 50px 0;
+  font-size: 33px;
+  color: #000;
+}
+
+.countries .countries_container {
+  background: #fff;
+  width: 100%;
+  min-height: 100px;
+  margin: 70px auto 0;
+  padding: 30px 30px;
+}
+
+.countries .countries_container img {
+  margin-bottom: 20px;
+}
+
+.countries .countries_container h2 {
+  padding: 30px;
+}
+
+.countries .countries_container button {
+  font: 700 18px "Anonymous Pro", monospace;
+  outline: none;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 9px 14px;
+  margin: 15px 10px 15px 5px;
+  background-color: #f2f2f2;
+  color: #000;
+}
+
+.countries .countries_container button:hover {
+  background-color: #e6e6e6;
+  color: #000;
+}
+
+.countries .countries_container input {
+  background-color: #f2f2f2;
+  margin: 13px 0 5px;
+  font: 700 15px "Anonymous Pro", monospace;
+  width: 105px;
+  border: 1px solid #b3b3b3;
+  border-radius: 7px;
+  padding: 10px 10px 10px 9px;
+}
+
+.countries .countries_container ul {
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0 0 20px;
+}
+
+.countries .countries_container ul li {
+  display: none;
+  font-size: 16px;
+  list-style-type: none;
+  padding: 30px;
+  font-weight: 700;
+}
+
+.countries .countries_container ul li span {
+  background-color: #e6e6e6;
+  padding: 10px 10px 10px 20px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+
+.countries .countries_container ul li h3 {
+  font-size: 1.3em;
+  margin: 0;
+}
+
+.countries .countries_container ul li:hover {
+  background-color: #e6e6e6;
+}
+
+.countries .countries_container ul li.default {
+  display: block;
+}
+
+.countries .countries_container ul li.name {
+  margin: 45px 0 0;
+  background-color: #e6e6e6;
+}
+
+.countries .countries_container ul li.info {
+  background-color: #fff;
+  font-size: 17px;
+  border-left: 3px solid #f2f2f2;
+  border-right: 3px solid #f2f2f2;
+}
+
+footer {
+  padding: 20px 0 25px;
+  font: normal 15px/17px "Anonymous Pro", monospace;
+  color: #000;
+}
+
+footer img {
+  width: 10vw;
+  margin-bottom: 30px;
+}
+
+footer .copyright {
+  height: 30px;
+}
+
+/* Media queries */
+/* For computers: */
+@media (max-width: 992px) {
+  .countries,
+  footer {
+    width: 100%;
+    padding-bottom: 2vh;
+  }
+  .countries img:nth-of-type(1) {
+    width: 12vw;
+  }
+  .countries h1 {
+    font-size: 27px;
+  }
+  .countries .countries_container {
+    margin-top: 3vw;
+  }
+  footer img {
+    width: 12vw;
+  }
+}
+
+/* For tablets: */
+@media (max-width: 768px) {
+  .countries h1 {
+    font-size: 24px;
+  }
+}
+
+/* For smart phones: */
+@media (max-width: 480px) {
+  .countries img:nth-of-type(1) {
+    width: 15vw;
+  }
+  .countries img:nth-of-type(2) {
+    width: 90%;
+  }
+  .countries h1 {
+    font-size: 18px;
+  }
+  .countries .countries_container {
+    padding: 15px 15px;
+  }
+  .countries .countries_container h2 {
+    font-size: 15px;
+  }
+  .countries .countries_container button {
+    font-size: 15px;
+  }
+  .countries .countries_container ul li {
+    font-size: 12px;
+    padding: 30px 0px;
+  }
+  .countries .countries_container ul li h3 {
+    font-size: 1.1em;
+  }
+  .countries .countries_container ul li.info {
+    font-size: 15px;
+  }
+  footer {
+    font-size: 12px;
+    padding-bottom: 35px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
